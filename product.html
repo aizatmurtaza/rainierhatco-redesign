@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Canyon Hat — Rainier Hat Co.</title>
+  <meta name="description" content="Hand-embroidered panoramic Grand Canyon hat. Snapback or trucker, $49.99. 100% of profits to the National Parks Foundation.">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { display: ['Bebas Neue','sans-serif'], mono: ['JetBrains Mono','monospace'] }
+      }}
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark">
+
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<header class="nav-root">
+  <div class="max-w-screen-xl mx-auto px-6 h-14 flex items-center justify-between">
+    <a href="index.html" class="font-display text-xl text-white tracking-widest">RAINIER HAT CO.</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="shop.html"  class="nav-link active">Shop</a>
+      <a href="about.html" class="nav-link">Mission</a>
+      <a href="#"          class="nav-link">FAQ</a>
+      <a href="#"          class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="shop.html" class="btn btn-primary btn-sm hidden md:inline-flex">Shop the Parks</a>
+      <button id="menu-btn" class="md:hidden text-white p-2 -mr-2" aria-label="Menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-nav" class="hidden md:hidden border-t border-[#2A2A2A] bg-[#0C0C0C] px-6 py-5 flex flex-col gap-4">
+    <a href="shop.html"  class="nav-link text-sm">Shop</a>
+    <a href="about.html" class="nav-link text-sm">Mission</a>
+  </div>
+</header>
+
+<!-- ── BREADCRUMB ────────────────────────────────────────── -->
+<div class="border-b border-[#2A2A2A] px-6 py-3">
+  <div class="max-w-screen-xl mx-auto breadcrumb flex items-center gap-2">
+    <a href="index.html">Home</a>
+    <span class="text-[#3A3A3A]">›</span>
+    <a href="shop.html">Shop</a>
+    <span class="text-[#3A3A3A]">›</span>
+    <span class="text-[#A0A0A0]">Grand Canyon Hat</span>
+  </div>
+</div>
+
+<!-- ── PRODUCT ───────────────────────────────────────────── -->
+<main class="max-w-screen-xl mx-auto px-6 py-12">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20">
+
+    <!-- ── LEFT: Images ───────────────────────────────────── -->
+    <div class="space-y-3">
+      <!-- Main image -->
+      <div class="relative overflow-hidden bg-[#131313]" style="aspect-ratio:1/1">
+        <img id="main-img"
+             src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&h=900&q=85"
+             alt="Grand Canyon Hat" class="w-full h-full object-cover"
+             onerror="this.parentElement.style.background='#1a1010'">
+        <div class="absolute top-4 left-4"><span class="tag tag-gold">Bestseller</span></div>
+      </div>
+      <!-- Thumbnails -->
+      <div class="grid grid-cols-4 gap-3">
+        <button class="thumb-btn active aspect-square bg-[#131313]" aria-label="View 1"
+                data-src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&h=900&q=85">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=200&h=200&q=60" alt="" class="w-full h-full object-cover">
+        </button>
+        <button class="thumb-btn aspect-square bg-[#131313]" aria-label="View 2"
+                data-src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=900&q=85">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=200&h=200&q=60" alt="" class="w-full h-full object-cover">
+        </button>
+        <button class="thumb-btn aspect-square bg-[#131313]" aria-label="View 3"
+                data-src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&h=900&q=85">
+          <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=200&h=200&q=60" alt="" class="w-full h-full object-cover">
+        </button>
+        <button class="thumb-btn aspect-square bg-[#131313]" aria-label="View 4"
+                data-src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=900&h=900&q=85">
+          <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=200&h=200&q=60" alt="" class="w-full h-full object-cover">
+        </button>
+      </div>
+    </div>
+
+    <!-- ── RIGHT: Info ─────────────────────────────────────── -->
+    <div class="lg:sticky" style="top:80px; align-self:start">
+
+      <p class="eyebrow mb-3">National Park Hat</p>
+      <h1 class="font-display text-white mb-1" style="font-size:clamp(2.8rem,6vw,5rem);line-height:0.95">GRAND CANYON</h1>
+      <p class="text-[#585858] text-sm mb-5">Arizona · Established 1919 · 1,904 sq miles</p>
+
+      <!-- Rating -->
+      <div class="flex items-center gap-3 mb-6">
+        <span class="star text-base">★★★★★</span>
+        <span class="text-white text-sm font-medium">4.9</span>
+        <a href="#reviews" class="text-[#585858] text-xs hover:text-white transition-colors underline underline-offset-2">(47 reviews)</a>
+      </div>
+
+      <!-- Price -->
+      <div class="flex items-baseline gap-4 mb-2">
+        <span class="price" style="font-size:3rem">$49.99</span>
+        <span class="text-[#3A3A3A] line-through text-lg font-mono">$59.99</span>
+        <span class="tag tag-forest">Save $10</span>
+      </div>
+      <p class="text-[#3DAA66] text-sm flex items-center gap-2 mb-8">
+        <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        100% of profits go to the National Parks Foundation
+      </p>
+
+      <!-- Style selector -->
+      <div class="mb-8">
+        <p class="eyebrow mb-3">Style: <span id="style-label" class="text-white normal-case" style="letter-spacing:0.05em;font-family:'Inter',sans-serif;font-size:0.75rem">Standard Snapback</span></p>
+        <div class="grid grid-cols-2 gap-3">
+          <button class="style-option selected text-left" onclick="selectStyle(this,'Standard Snapback')">
+            <span class="font-display text-lg block">SNAPBACK</span>
+            <span class="font-mono text-xs text-[#585858]">100% Acrylic · Cotton Bill</span>
+          </button>
+          <button class="style-option text-left" onclick="selectStyle(this,'Trucker Hat')">
+            <span class="font-display text-lg block">TRUCKER</span>
+            <span class="font-mono text-xs text-[#585858]">Mesh Back · Foam Front</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Size note -->
+      <div class="border border-[#2A2A2A] bg-[#131313] p-4 flex items-center gap-3 mb-8">
+        <svg class="w-5 h-5 text-[#585858] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <p class="text-[#585858] text-sm"><span class="text-white font-medium">One Size Fits Most</span> — Adjustable snapback closure.</p>
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex flex-col gap-3 mb-8">
+        <button id="atc-btn" onclick="addToCart(this)" class="btn btn-primary w-full justify-center text-base py-4">
+          Add to Cart — $49.99
+        </button>
+        <button class="btn btn-outline w-full justify-center text-base py-4">
+          Buy Now
+        </button>
+      </div>
+
+      <!-- Trust row -->
+      <div class="grid grid-cols-3 gap-4 border border-[#2A2A2A] bg-[#131313] p-5 mb-8">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"/></svg>
+          </div>
+          <span class="eyebrow text-center" style="color:var(--text-2);font-size:0.6rem">Free Returns<br>30 Days</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <span class="eyebrow text-center" style="color:var(--text-2);font-size:0.6rem">100%<br>to Parks</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          </div>
+          <span class="eyebrow text-center" style="color:var(--text-2);font-size:0.6rem">Ships in<br>2–3 Days</span>
+        </div>
+      </div>
+
+      <!-- Accordion -->
+      <div class="border border-[#2A2A2A] divide-y divide-[#2A2A2A]">
+        <details>
+          <summary class="flex items-center justify-between px-5 py-4 hover:bg-[#131313] transition-colors">
+            <span class="eyebrow text-[#A0A0A0]">Materials & Care</span>
+            <svg class="chevron w-4 h-4 text-[#585858]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 pt-2 text-[#585858] text-sm space-y-1.5">
+            <p>· 100% acrylic structured crown</p>
+            <p>· Cotton bill with rope detail</p>
+            <p>· Adjustable snapback closure, one size fits most</p>
+            <p>· Spot clean only · Air dry · Do not machine wash</p>
+            <p>· Hand-embroidered panoramic design</p>
+          </div>
+        </details>
+        <details>
+          <summary class="flex items-center justify-between px-5 py-4 hover:bg-[#131313] transition-colors">
+            <span class="eyebrow text-[#A0A0A0]">Shipping & Returns</span>
+            <svg class="chevron w-4 h-4 text-[#585858]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 pt-2 text-[#585858] text-sm space-y-1.5">
+            <p>· Ships via USPS in 2–3 business days</p>
+            <p>· Free prepaid return label on every order</p>
+            <p>· 30-day return window, no questions asked</p>
+            <p>· Order tracking email sent at shipment</p>
+          </div>
+        </details>
+        <details>
+          <summary class="flex items-center justify-between px-5 py-4 hover:bg-[#131313] transition-colors">
+            <span class="eyebrow text-[#A0A0A0]">Our Donation Promise</span>
+            <svg class="chevron w-4 h-4 text-[#585858]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 pt-2 text-[#585858] text-sm space-y-1.5">
+            <p>· 100% of our profits are donated to the National Parks Foundation</p>
+            <p>· Grand Canyon receives a direct share of every sale</p>
+            <p>· Annual impact reports published each January</p>
+            <p>· <a href="about.html" class="text-[#D4A843] hover:underline">Learn more about our mission →</a></p>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<hr class="section-rule">
+
+<!-- ── PARK FACTS ────────────────────────────────────────── -->
+<section class="py-20 px-6">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="eyebrow mb-4">About the Park</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white mb-6">GRAND CANYON<br>NATIONAL PARK</h2>
+      <p class="text-[#585858] leading-relaxed mb-6">One of the world's most spectacular natural wonders. The Grand Canyon stretches 277 miles long, up to 18 miles wide, and over a mile deep — its layered bands of colorful rock revealing billions of years of Earth's geological history.</p>
+      <p class="text-[#585858] leading-relaxed mb-8">Our donation funds trail upkeep on the South Rim and wildlife corridor programs protecting the park's 447 bird species and 91 mammal species.</p>
+      <div class="grid grid-cols-3 gap-6">
+        <div class="stat-block">
+          <div class="stat-number text-3xl">277mi</div>
+          <div class="stat-label">Length</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number text-3xl">6M+</div>
+          <div class="stat-label">Visitors/yr</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number text-3xl">1,904</div>
+          <div class="stat-label">Sq Miles</div>
+        </div>
+      </div>
+    </div>
+    <div class="relative overflow-hidden" style="height:420px">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&h=700&q=80"
+           alt="Grand Canyon" class="w-full h-full object-cover"
+           onerror="this.parentElement.style.background='#131313'">
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- ── REVIEWS ───────────────────────────────────────────── -->
+<section id="reviews" class="py-20 px-6">
+  <div class="max-w-screen-xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <div>
+        <p class="eyebrow mb-3">47 Reviews</p>
+        <h2 class="font-display text-4xl md:text-5xl text-white">CUSTOMER REVIEWS</h2>
+      </div>
+      <!-- Rating summary -->
+      <div class="flex items-center gap-6">
+        <div class="text-center">
+          <div class="font-display text-6xl" style="color:var(--gold)">4.9</div>
+          <div class="star text-sm mt-1">★★★★★</div>
+        </div>
+        <div class="space-y-1.5 min-w-[140px]">
+          <div class="flex items-center gap-2 text-xs">
+            <span class="font-mono text-[#585858] w-4">5★</span>
+            <div class="flex-1 h-1 bg-[#2A2A2A] rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:85%;background:var(--gold)"></div></div>
+            <span class="font-mono text-[#585858]">85%</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="font-mono text-[#585858] w-4">4★</span>
+            <div class="flex-1 h-1 bg-[#2A2A2A] rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:12%;background:var(--gold)"></div></div>
+            <span class="font-mono text-[#585858]">12%</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="font-mono text-[#585858] w-4">3★</span>
+            <div class="flex-1 h-1 bg-[#2A2A2A] rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:3%;background:var(--gold)"></div></div>
+            <span class="font-mono text-[#585858]">3%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="review-card p-6">
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 flex items-center justify-center font-display text-sm" style="background:var(--gold);color:#000">SL</div>
+            <div>
+              <p class="text-white text-sm font-medium">Sarah L.</p>
+              <p class="text-[#585858] text-xs">Phoenix, AZ</p>
+            </div>
+          </div>
+          <span class="eyebrow text-[#3DAA66]" style="font-size:0.55rem">Verified</span>
+        </div>
+        <div class="star text-sm mb-3">★★★★★</div>
+        <p class="quote-mark">❝</p>
+        <p class="text-[#A0A0A0] text-sm leading-relaxed mt-1">Wore my Grand Canyon hat on a rim-to-rim hike inside the actual canyon. The embroidery is stunning — strangers kept stopping to ask about it. Knowing the profit goes back to the park makes it even more special.</p>
+        <p class="eyebrow mt-4" style="color:var(--text-3);font-size:0.6rem">March 2025 · Standard Snapback</p>
+      </div>
+
+      <div class="review-card p-6">
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 flex items-center justify-center font-display text-sm" style="background:var(--forest);color:#000">TR</div>
+            <div>
+              <p class="text-white text-sm font-medium">Tom R.</p>
+              <p class="text-[#585858] text-xs">Denver, CO</p>
+            </div>
+          </div>
+          <span class="eyebrow text-[#3DAA66]" style="font-size:0.55rem">Verified</span>
+        </div>
+        <div class="star text-sm mb-3">★★★★★</div>
+        <p class="quote-mark">❝</p>
+        <p class="text-[#A0A0A0] text-sm leading-relaxed mt-1">Got the trucker version. The fit is perfect, the brim is stiff, and the embroidery detail is legitimately impressive up close. Quality is way better than I expected at this price point. Already ordered two more.</p>
+        <p class="eyebrow mt-4" style="color:var(--text-3);font-size:0.6rem">February 2025 · Trucker Hat</p>
+      </div>
+
+      <div class="review-card p-6">
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 flex items-center justify-center font-display text-sm" style="background:var(--bg4);color:var(--text-1);border:1px solid var(--border2)">AM</div>
+            <div>
+              <p class="text-white text-sm font-medium">Amy M.</p>
+              <p class="text-[#585858] text-xs">Seattle, WA</p>
+            </div>
+          </div>
+          <span class="eyebrow text-[#3DAA66]" style="font-size:0.55rem">Verified</span>
+        </div>
+        <div class="star text-sm mb-3">★★★★★</div>
+        <p class="quote-mark">❝</p>
+        <p class="text-[#A0A0A0] text-sm leading-relaxed mt-1">Bought as a gift for my dad who hikes every summer. He hasn't taken it off since. The detail is next-level, arrived in 3 days with a personal note. The mission behind it makes it a purchase that actually means something.</p>
+        <p class="eyebrow mt-4" style="color:var(--text-3);font-size:0.6rem">January 2025 · Standard Snapback</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- ── YOU MAY ALSO LIKE ──────────────────────────────────── -->
+<section class="py-20 px-6">
+  <div class="max-w-screen-xl mx-auto">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <p class="eyebrow mb-3">Keep Exploring</p>
+        <h2 class="font-display text-4xl md:text-5xl text-white">YOU MAY ALSO LIKE</h2>
+      </div>
+      <a href="shop.html" class="btn btn-ghost hidden md:inline-flex">All Parks →</a>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="product.html" class="park-card group">
+        <div class="relative overflow-hidden" style="height:260px">
+          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=500&h=500&q=70" alt="Yosemite" class="park-card-img" onerror="this.style.background='#101a10'">
+          <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(12,12,12,0.95) 0%,rgba(0,0,0,0) 55%)"></div>
+          <div class="absolute top-3 left-3"><span class="tag tag-gold">Bestseller</span></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="font-display text-2xl text-white">YOSEMITE</h3>
+            <span class="price text-xl">$49.99</span>
+          </div>
+        </div>
+      </a>
+      <a href="product.html" class="park-card group">
+        <div class="relative overflow-hidden" style="height:260px">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=500&h=500&q=70" alt="Glacier" class="park-card-img" onerror="this.style.background='#10151a'">
+          <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(12,12,12,0.95) 0%,rgba(0,0,0,0) 55%)"></div>
+          <div class="absolute top-3 left-3"><span class="tag tag-gold">Bestseller</span></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="font-display text-2xl text-white">GLACIER</h3>
+            <span class="price text-xl">$49.99</span>
+          </div>
+        </div>
+      </a>
+      <a href="product.html" class="park-card group">
+        <div class="relative overflow-hidden" style="height:260px">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&h=500&q=70" alt="Mt. Rainier" class="park-card-img" onerror="this.style.background='#10151a'">
+          <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(12,12,12,0.95) 0%,rgba(0,0,0,0) 55%)"></div>
+          <div class="absolute top-3 left-3"><span class="tag tag-forest">New</span></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="font-display text-2xl text-white">MT. RAINIER</h3>
+            <span class="price text-xl">$49.99</span>
+          </div>
+        </div>
+      </a>
+      <a href="product.html" class="park-card group">
+        <div class="relative overflow-hidden" style="height:260px">
+          <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=500&h=500&q=70" alt="Yellowstone" class="park-card-img" onerror="this.style.background='#101a10'">
+          <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(12,12,12,0.95) 0%,rgba(0,0,0,0) 55%)"></div>
+          <div class="absolute top-3 left-3"><span class="tag tag-forest">New</span></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="font-display text-2xl text-white">YELLOWSTONE</h3>
+            <span class="price text-xl">$49.99</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────── -->
+<footer class="border-t border-[#2A2A2A] pt-14 pb-8 px-6">
+  <div class="max-w-screen-xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+      <div class="col-span-2">
+        <a href="index.html" class="font-display text-2xl text-white tracking-widest block mb-4">RAINIER HAT CO.</a>
+        <p class="text-[#585858] text-sm leading-relaxed max-w-xs">Employee-owned · Seattle, WA · 100% of profits to National Parks.</p>
+      </div>
+      <div>
+        <h4 class="eyebrow text-[#A0A0A0] mb-5">Shop</h4>
+        <ul class="space-y-3 text-sm text-[#585858]">
+          <li><a href="shop.html" class="hover:text-white transition-colors">All Parks</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Wholesale</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="eyebrow text-[#A0A0A0] mb-5">Info</h4>
+        <ul class="space-y-3 text-sm text-[#585858]">
+          <li><a href="about.html" class="hover:text-white transition-colors">Our Mission</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Shipping & Returns</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-[#2A2A2A] pt-6 flex flex-col md:flex-row justify-between items-start gap-3">
+      <p class="text-[#3A3A3A] text-xs">© 2025 Rainier Hat Co. All rights reserved.</p>
+      <div class="flex gap-6 text-xs text-[#3A3A3A]">
+        <a href="#" class="hover:text-white transition-colors">Privacy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-nav').classList.toggle('hidden');
+  });
+
+  // Thumbnail switcher
+  document.querySelectorAll('.thumb-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('main-img').src = btn.dataset.src;
+      document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  // Style selector
+  function selectStyle(el, label) {
+    document.querySelectorAll('.style-option').forEach(b => b.classList.remove('selected'));
+    el.classList.add('selected');
+    document.getElementById('style-label').textContent = label;
+  }
+
+  // Add to cart feedback
+  function addToCart(btn) {
+    btn.textContent = 'Added to Cart ✓';
+    btn.style.background = 'var(--forest)';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = 'Add to Cart — $49.99';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 2000);
+  }
+</script>
+</body>
+</html>
